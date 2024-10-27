@@ -63,9 +63,9 @@ function App() {
   return (
       <div className="grid row gap-3 mt-8 ml-6">
 
-          <div className="flex flex-col col-start-1 col-end-3">
-              <h2 className="text-2xl">{editUserId ? 'Kullanıcıyı Güncelle' : 'Kullanıcı Ekle'}</h2>
-              <form onSubmit={handleSubmit} className="flex flex-col gap-2">
+          <div className="flex flex-col items-center col-start-1 col-end-3">
+              <h2 className="text-2xl my-6">{editUserId ? 'Kullanıcıyı Güncelle' : 'Kullanıcı Kayıt'}</h2>
+              <form onSubmit={handleSubmit} className="flex flex-col items-center gap-3">
 
                   <div>
                       <input
@@ -108,7 +108,7 @@ function App() {
                   </div>
 
                   <div>
-                      <button type="submit">{editUserId ? 'Güncelle' : 'Ekle'}</button>
+                      <button type="submit">{editUserId ? 'Güncelle' : 'Kaydet'}</button>
                   </div>
 
               </form>
